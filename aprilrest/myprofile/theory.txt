@@ -1,0 +1,81 @@
+REST API
+Full form of REST API is Representational State Transfer Application Programming Interface more commonly known as REST API web service. 
+It means when a RESTful API is called, the server will transfer a representation of the requested resource's state to the client system.
+
+What is the hierarchy of statement, function,class, module, package and library in python?
+In Python, the terms class, function, statement, module, package, and library all represent different levels of abstraction and organization within a program. They are connected in a hierarchical manner as follows:
+
+Statement: A statement is the smallest standalone element of a program that expresses some action to be carried out. Examples of statements include variable assignments, control flow statements (like if, for, while), and expressions.
+
+python
+Copy code
+x = 10  # Assignment statement
+print(x)  # Expression statement
+Function: A function is a block of reusable code that performs a specific task. Functions can contain multiple statements and can be defined using the def keyword.
+
+python
+Copy code
+def add(a, b):
+    return a + b
+Class: A class is a blueprint for creating objects (instances). It defines a set of attributes and methods that the created objects will have. Classes can contain methods, which are functions defined within the class.
+
+python
+Copy code
+class Calculator:
+    def add(self, a, b):
+        return a + b
+Module: A module is a file containing Python definitions and statements. A module can define functions, classes, and variables. It can also include runnable code. Modules are used to organize code into manageable sections.
+
+python
+Copy code
+# my_module.py
+def add(a, b):
+    return a + b
+
+class Calculator:
+    def add(self, a, b):
+        return a + b
+Package: A package is a way of organizing related modules into a directory hierarchy. A package contains an __init__.py file, which can be empty or contain initialization code for the package. Packages help to structure the module namespace by using "dotted module names".
+
+markdown
+Copy code
+my_package/
+├── __init__.py
+├── module1.py
+└── module2.py
+Library: A library is a collection of packages and modules that provide a wide range of functionality. Libraries are often published and distributed to be reused in different programs. They can be installed using package managers like pip.
+
+Examples of libraries include:
+
+Standard Library: Built-in modules and packages provided by Python, like math, os, and sys.
+Third-Party Libraries: External libraries like NumPy, Pandas, and Requests.
+Hierarchical Order
+Here is the hierarchical relationship among these terms:
+
+Statements are the building blocks of functions and methods.
+Functions and methods (methods are functions within a class) contain multiple statements.
+Classes encapsulate functions (methods) and data attributes.
+Modules contain classes, functions, and variable definitions, and they organize them into separate files.
+Packages are directories that contain multiple modules and possibly sub-packages, providing a hierarchical organization.
+Libraries are collections of packages and modules, providing extensive functionality and tools.
+Here's a diagram to visualize this hierarchy:
+
+mathematica
+Copy code
+Library
+  └── Package
+        └── Module
+              └── Class
+                    └── Method/Function
+                          └── Statement
+Each level in the hierarchy builds upon the previous one, creating a structured way to organize and manage code in Python.
+
+what is beautiful soup?
+Beautiful Soup is a Python library used for web scraping purposes to pull the data out of HTML and XML files. 
+It creates a parse tree for parsing HTML and XML documents, making it easy to extract and manipulate data.
+Beautiful Soup -> package
+Scrapy -> framework
+
+Scrapy is an open-source and collaborative web crawling framework for Python. 
+It is used to extract data from websites, process it as per requirements, and store it in your preferred format (such as CSV, JSON, or a database). 
+Scrapy is highly efficient for large-scale web scraping and provides a lot of built-in functionalities for handling requests, managing web crawling, and parsing the data.
